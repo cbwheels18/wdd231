@@ -3,9 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Commit Document</title>
+    <title>WDD231 - Web Frontend Development I - Cody Wheeler</title>
+    <meta
+      name="description"
+      content="WDD 231 – Web Frontend Development I - Cody Wheeler - Home page for WDD 231"
+    />
+    <meta name="author" content="Cody Wheeler" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger-base.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/index.js" defer></script>
   </head>
   <body>
-    <h1>Test Header</h1>
+    <header>
+      <div class="header-top">
+        <img
+          src="images/profile.jpg"
+          alt="Cody"
+          id="mypicture"
+          height="100"
+          width="200"
+        />
+        <span>Cody Wheeler</span>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="">Chamber</a>
+        <a href="">Final</a>
+        <a href="https://github.com/cbwheels18">Github</a>
+        <a href="https://www.linkedin.com/in/cody-wheeler-3305a41ba"
+          >LinkedIn</a
+        >
+      </nav>
+    </header>
+    <main>
+      <h1>Home</h1>
+      <div class="row">
+        <section class="card section1">
+          <h2>Course Work</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <section class="card section2">
+          <h2>Hamilton, New Zealand</h2>
+          <img src="images/kiwi.png" alt="Hamilton" width="450" />
+        </section>
+      </div>
+      <section id="course-list" class="card section3">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="btn-group">
+          <button class="btn">All</button>
+          <button class="btn">CSE</button>
+          <button class="btn">WDD</button>
+        </div>
+        <p id="credit-total">
+          <strong>Total Credits:</strong> <span id="total-credits">0</span>
+        </p>
+        <div id="courses" class="course-grid"></div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah,
+        USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>

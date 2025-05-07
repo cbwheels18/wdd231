@@ -1,0 +1,234 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #2E3A59;
+    --accent-color: #F5A9A9;
+    --background-color: #F4F4F4;
+    --text-color: #333333;
+    --button-color: #66BB6A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Big Shoulders', arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 25px 0 0 25px;
+}
+
+h2, h3 {
+    border-bottom: 1px solid var(--primary-color)
+}
+
+header {
+    grid-area: header;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0;
+    font-size: 4rem;
+}
+
+#menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    width: 100%;
+    padding: 1rem;
+}
+
+.navigation.active {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--background-color);
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px var(--secondary-color);
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.section1 {
+    flex: 3;
+    height: 20rem;
+}
+
+.section2 {
+    flex: 2;
+    height: 20rem;
+}
+
+.section3 {
+    width: 100%;
+    height: 70rem;
+}
+
+.btn {
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 20px;
+    width: 33%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #57A05B;
+    transform: scale(1.05);
+}
+
+.btn-group {    
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px dotted var(--primary-color);
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  
+  .course-card {
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 0.85rem;
+  }
+  
+  .course-card.completed {
+    background-color: #e8fbe8;
+    border-color: green;
+  }
+
+  .course-card p:nth-of-type(2) {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .badge {
+    background-color: green;
+    color: white;
+    padding: 0.2em 0.5em;
+    font-size: 0.7rem;
+    border-radius: 0.4em;
+  }
+
+footer {
+    grid-area: footer;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--primary-color);
+}
+
+#lastModified{
+    color: var(--accent-color)
+}
+
+footer #currentyear {
+    font-weight: bold;
+}
+
+#mypicture {
+    max-width: 100px;
+    height: auto;
+}
+
+
+ul {
+    margin: 25px;
+    font-size: 2rem;
+}
+
+li {
+    margin-bottom: 3rem;
+}
