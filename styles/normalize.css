@@ -11,7 +11,7 @@
  /* html {
     line-height: 1.15; /* 1 */
     /* -webkit-text-size-adjust: 100%; /* 2 */
-  /* } */ */ */
+  /* } */
   
   /* Sections
      ========================================================================== */
@@ -290,8 +290,8 @@
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
     /* outline-offset: -2px; /* 2 */
-  /* } */ */
-   */
+  /* } */ 
+  
   /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
@@ -309,7 +309,7 @@
     -webkit-appearance: button; /* 1 */
     /* font: inherit; /* 2 */
   /* } */
-   */ */ */
+  
   /* Interactive
      ========================================================================== */
   
