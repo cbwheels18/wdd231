@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ${course.completed ? '<span class="badge">Completed</span>' : ''}
           </div>
           <p><strong>Credits:</strong> ${course.credits}</p>
-          <p><strong>Description:</strong> ${course.description}</p>
+          
           <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
         `;
   

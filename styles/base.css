@@ -179,11 +179,12 @@ main {
   }
 
   .course-card p:nth-of-type(2) {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-clamp: 3;
   }
+  
   
   .course-header {
     display: flex;
