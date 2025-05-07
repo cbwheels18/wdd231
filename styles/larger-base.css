@@ -52,7 +52,7 @@
 
   .btn {
     background-color: var(--button-color);
-    color: white;
+    color: black;
     padding: 10px 20px;
     width: 10%;
     border: none;
