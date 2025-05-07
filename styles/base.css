@@ -89,7 +89,7 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover, .active {
     text-decoration: underline;
     color: var(--accent-color);
 }
