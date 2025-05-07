@@ -159,7 +159,7 @@ main {
 
 .course-grid {
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
     margin-top: 3rem;
     gap: 1rem;
   }
@@ -182,7 +182,6 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    line-clamp: 3;
   }
   
   
