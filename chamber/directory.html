@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD231 - Web Frontend Development I - Cody Wheeler</title>
+    <meta
+      name="description"
+      content="WDD 231 – Web Frontend Development I - Cody Wheeler - Chamber of Commerce for WDD 231"
+    />
+    <meta name="author" content="Cody Wheeler" />
+    <meta property="og:title" content="Cody Wheeler Chamber of Commerce">
+    <meta property="og:description" content="My Chamber of Commerce Page for WDD 231">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
+    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.u1-kK8aG40u_mAFTVw6VVAHaEK%26cb%3Diwc2%26pid%3DApi&f=1&ipt=3c4f5a1973591b276d60b80afe93a51f22f832b28b880fad245c0c1002ca502f&ipo=images" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/larger-chamber.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/companies.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <img
+          src="images/nexuslogo.png"
+          alt="Cody"
+          id="mypicture"
+          height="100"
+          width="200"
+        />
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+      <nav class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="/chamber/directory.html" class="active">Directory</a>
+        <a href="">Join</a>
+        <a href="">Discover</a>
+      </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/taurangabay.jpg" alt="Hero Image" width="1000"/>
+        </section>
+        <section class="home">
+            <h1>Home</h1>
+                <section class="section1">
+                <h2>Events</h2>
+                <p>&bull; City Festival </p>
+                <p>&bull; Carnival </p>
+                <p>&bull; Learning Workshop </p>
+                </section>
+                <section class="weather">
+                <h2>Current Weather</h2>
+                <img src="images/weather.png" alt="Weather Icon" width="50" height="50"/>
+                <p><b>75 &deg; F</b></p>
+                <p>Sunny</p>
+                <p>Humidity: 50%</p>
+                <p>Wind: 5 mph</p>
+                <p>Sunrise: 6:00 AM</p>
+                <p>Sunset: 7:00 PM</p>
+                </section>
+                <section class="weather">
+                <h2>Weather Forecast</h2>
+                <p>Today: <b>75 &deg; F</b></p>
+                <p>Tomorrow: <b>72 &deg; F</b></p>
+                <p>Day After Tomorrow: <b>76 &deg; F</b></p>
+                </section>
+        </section>
+        <div class="company-menu">
+		      <button id="grid">⏹️ Grid</button>
+		      <button id="list">📄 List</button>
+	      </div>
+        <section class="cards grid">
+
+        </section>
+    </main>
+    <footer>
+      <div class="address">
+        <h3><b>Nexus Bay Chamber Of Commerce</b></h3>
+        <p>25 street lane</p>
+        <p>Nexus Bay, Base 123</p>
+        <p>info@nexusbay.org</p>
+        <p>(123) 999-9999</p>
+      </div>
+      <div class="social">
+        
+        <a href="https://www.youtube.com" target="_blank" rel="noopener"
+          ><img
+            src="images/youtube.png"
+            alt="Youtube"
+            width="60"
+            height="60"
+        /></a>
+        <a href="https://www.x.com" target="_blank" rel="noopener"
+          ><img
+            src="images/twitter.png"
+            alt="Twitter"
+            width="60"
+            height="60"
+        /></a>
+        <a href="https://www.Linkedin.com" target="_blank" rel="noopener"
+          ><img
+            src="images/linkedin.png"
+            alt="Linkedin"
+            width="60"
+            height="60"
+        /></a>
+      </div>
+      
+      <div class="copywright">
+      <p>WDD 231 Class Project</p>
+      <p>Cody Wheeler</p>
+      <p>
+        &copy; <span id="currentyear"></span> &bull; Nexus Bay Chamber Of Commerce</p>
+      <p id="lastModified"></p>
+      </div>
+    </footer>
+  </body>
+</html>

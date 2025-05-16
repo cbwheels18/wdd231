@@ -1,0 +1,110 @@
+[
+  {
+    "name": "SetterSuite",
+    "address": "830 International Blvd, Fountain Inn, SC 29644",
+    "phone": "864-531-2660",
+    "email": "info@settersuite.com",
+    "website": "https://settersuite.com/",
+    "image": "images/logo9.png",
+    "membership_level": 3,
+    "slogan": "Streamlining Sales Success.",
+    "description": "Founded in 2024, SetterSuite is the place for Setters of all Sales Groups to have one place to streamline their process.",
+    "founded": 2024
+  },
+  {
+    "name": "Harbor & Co.",
+    "address": "78 Dockside Ave, Nexus Bay, CA 90211",
+    "phone": "555-987-6543",
+    "email": "contact@harborco.com",
+    "website": "https://www.harborco.com",
+    "image": "images/logo4.png",
+    "membership_level": 2,
+    "slogan": "Navigating Business with Precision.",
+    "description": "Boutique consulting firm serving the local maritime industry.",
+    "founded": 2008
+  },
+  {
+    "name": "Sunrise Café",
+    "address": "456 Beachfront Rd, Nexus Bay, CA 90212",
+    "phone": "555-345-6789",
+    "email": "hello@sunrisecafenb.com",
+    "website": "https://www.sunrisecafenb.com",
+    "image": "images/logo1.png",
+    "membership_level": 1,
+    "slogan": "Wake Up with Flavor.",
+    "description": "Family-owned café known for organic breakfasts and coastal views.",
+    "founded": 2016
+  },
+  {
+    "name": "Nexus Builders Group",
+    "address": "891 Commerce St, Nexus Bay, CA 90213",
+    "phone": "555-654-3210",
+    "email": "support@nexusbuilders.com",
+    "website": "https://www.nexusbuilders.com",
+    "image": "images/logo2.png",
+    "membership_level": 2,
+    "slogan": "Building Better Futures.",
+    "description": "Construction and renovation experts in commercial properties.",
+    "founded": 2001
+  },
+  {
+    "name": "Tide Financial",
+    "address": "301 Marina Plaza, Nexus Bay, CA 90214",
+    "phone": "555-222-3333",
+    "email": "advice@tidefinancial.com",
+    "website": "https://www.tidefinancial.com",
+    "image": "images/logo3.png",
+    "membership_level": 3,
+    "slogan": "Rising With Your Goals.",
+    "description": "Offers wealth management and investment planning services.",
+    "founded": 2005
+  },
+  {
+    "name": "EcoBay Supplies",
+    "address": "210 Greenway Ln, Nexus Bay, CA 90215",
+    "phone": "555-444-7777",
+    "email": "sales@ecobaysupplies.com",
+    "website": "https://www.ecobaysupplies.com",
+    "image": "images/logo5.png",
+    "membership_level": 1,
+    "slogan": "Sustain Your Office, Sustain the Planet.",
+    "description": "Supplier of eco-friendly office and retail materials.",
+    "founded": 2018
+  },
+  {
+    "name": "BayFit Wellness Center",
+    "address": "675 Health Dr, Nexus Bay, CA 90216",
+    "phone": "555-888-9999",
+    "email": "info@bayfitwellness.com",
+    "website": "https://www.bayfitwellness.com",
+    "image": "images/logo6.png",
+    "membership_level": 2,
+    "slogan": "Wellness by the Bay.",
+    "description": "Fitness and wellness center offering classes and health coaching.",
+    "founded": 2010
+  },
+  {
+    "name": "Anchor Digital Media",
+    "address": "312 Wave Blvd, Nexus Bay, CA 90217",
+    "phone": "555-777-1212",
+    "email": "hello@anchormedia.com",
+    "website": "https://www.anchormedia.com",
+    "image": "images/logo7.png",
+    "membership_level": 3,
+    "slogan": "Anchoring Brands in the Digital Age.",
+    "description": "Full-service digital marketing agency specializing in coastal businesses.",
+    "founded": 2019
+  },
+  {
+    "name": "Lighthouse Learning Center",
+    "address": "920 Beacon St, Nexus Bay, CA 90218",
+    "phone": "555-321-8888",
+    "email": "info@lighthouselearning.org",
+    "website": "https://www.lighthouselearning.org",
+    "image": "images/logo8.png",
+    "membership_level": 2,
+    "slogan": "Guiding Bright Minds.",
+    "description": "Educational center offering tutoring, enrichment, and college prep services.",
+    "founded": 2012
+  }
+]

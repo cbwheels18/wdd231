@@ -1,0 +1,160 @@
+@media screen and (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    background: none;
+    padding: 0;
+    margin-left: auto;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .hero {
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .home h1 {
+    grid-column: 1 / -1;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .home h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .section1,
+  .weather {
+    background-color: white;
+    height: 400px;
+    width: auto;
+    padding: 15px;
+    box-shadow: 0 4px 8px var(--secondary-color);
+    margin: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .section1 h2,
+  .weather h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .section1 p {
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .weather p {
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    gap: 1rem;
+  }
+
+  .cards h2 {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .cards div {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px var(--secondary-color);
+    margin: 15px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .cards.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 15px;
+  }
+
+  .cards.list .card .info h2,
+  .cards.list .card .info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  .cards.list .card .info p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .cards.list .card .info p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .cards.grid .card {
+    text-align: center;
+  }
+
+  .cards.grid .card img {
+    width: 100%;
+    max-width: 75px;
+    border-radius: 10px;
+  }
+
+  .info {
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .btn {
+    background-color: var(--button-color);
+    color: black;
+    padding: 10px 20px;
+    width: 10%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+}

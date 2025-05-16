@@ -1,0 +1,26 @@
+{
+    "ward": {
+        "family_name": "smith",
+        "moved_in": "2023-01-01",
+        "household_number": 3,
+        "visited": false,
+        "household_members": [
+            {
+                "name": "John",
+                "gender": "m",
+                "birthdate": "1981-01-24"
+            },
+            {
+                "name": "Jane",
+                "gender": "f",
+                "birthdate": "1984-10-24"
+            },
+            {
+                "name": "Emily",
+                "gender": "f",
+                "birthdate": "1997-01-31"
+            }
+        ]
+
+    }
+}

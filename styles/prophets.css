@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #2E3A59;
+    --accent-color: #F5A9A9;
+    --background-color: #F4F4F4;
+    --text-color: #333333;
+    --button-color: #66BB6A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Big Shoulders', arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+    padding: 25px 0 0 25px;
+    font-size: 2rem;
+}
+
+main {
+    gap: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#cards {
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+
+section {
+    background-color: var(--primary-color);
+    margin: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+}
+
+section h2 {
+    /* color: rgb(117, 29, 45); */
+    color: var(--accent-color)
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
