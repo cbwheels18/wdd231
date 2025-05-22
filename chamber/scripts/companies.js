@@ -5,6 +5,7 @@ async function getCompanyData() {
   const response = await fetch(url); // request
   const data = await response.json(); // parse the JSON data
   displayCompanies(data);
+  displaySpotlights(data);
 }
 
 getCompanyData();
@@ -58,4 +59,33 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
+}
+
+function displaySpotlights(companies) {
+  const spotlightContainer = document.querySelector('.spotlight-container');
+
+  const qualifiedMembers = companies.filter(member => member.membership_level === 2 || member.membership_level === 3);
+
+  const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
+
+  const selected = shuffled.slice(0, Math.min(3, shuffled.length));
+
+
+  selected.forEach(company => {
+    const spotlight = document.createElement('div');
+    spotlight.classList.add('spotlight');
+    const levelClass = company.membership_level === 3 ? 'gold' : 'silver';
+
+    spotlight.innerHTML = `
+    <img src="${company.image}" alt="${company.name} Logo" loading="lazy" width="150">
+    <h3>${company.name}</h3>
+    <p><strong>Phone:</strong> ${company.phone}</p>
+    <p><strong>Address:</strong> ${company.address}</p>
+    <p><strong>Website:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
+    <p>&nbsp</p>
+    <p><strong>Membership Level:</strong> <span class="${levelClass}">${company.membership_level === 3 ? 'Gold' : 'Silver'}</span></p>
+  `;
+
+    spotlightContainer.appendChild(spotlight);
+  });
 }

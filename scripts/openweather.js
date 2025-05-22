@@ -5,11 +5,11 @@ const apiKey = '803a5617f399eff11d7cd9234a030f60';
 const lat = '49.75056';
 const lon = '6.63569';
 const units = 'imperial';
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
 
 async function apiFetch() {
     try {
-        const response = await fetch (url);
+        const response = await fetch (apiUrl);
         if (response.ok) {
             const data = await response.json();
             displayResults(data);

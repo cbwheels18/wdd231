@@ -26,6 +26,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/companies.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header>
@@ -40,8 +41,8 @@
         <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
       </div>
       <nav class="navigation">
-        <a href="/chamber/index.html">Home</a>
-        <a href="/chamber/directory.html" class="active">Directory</a>
+        <a href="/chamber/index.html"  class="active">Home</a>
+        <a href="/chamber/directory.html">Directory</a>
         <a href="">Join</a>
         <a href="">Discover</a>
       </nav>
@@ -49,6 +50,11 @@
     <main>
         <section class="hero">
             <img src="images/taurangabay.jpg" alt="Hero Image" width="1000"/>
+            <button class="cta" onclick="window.location.href='/chamber/join.html';">Join Us Here!</button>
+        </section>
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-container"></div>
         </section>
         <section class="home">
             <h1>Home</h1>
@@ -60,19 +66,22 @@
                 </section>
                 <section class="weather">
                 <h2>Current Weather</h2>
-                <img src="images/weather.png" alt="Weather Icon" width="50" height="50"/>
-                <p><b>75 &deg; F</b></p>
-                <p>Sunny</p>
+                <img id="weather-icon" src="" alt="">
+                <p id="current-temp"></p>
+                <figure>
+                <figcaption></figcaption>
+                </figure>
+                <!-- <p>Sunny</p>
                 <p>Humidity: 50%</p>
                 <p>Wind: 5 mph</p>
                 <p>Sunrise: 6:00 AM</p>
-                <p>Sunset: 7:00 PM</p>
+                <p>Sunset: 7:00 PM</p> -->
                 </section>
                 <section class="weather">
                 <h2>Weather Forecast</h2>
-                <p>Today: <b>75 &deg; F</b></p>
-                <p>Tomorrow: <b>72 &deg; F</b></p>
-                <p>Day After Tomorrow: <b>76 &deg; F</b></p>
+                <p>Today: <b></b></p>
+                <p>Tomorrow: <b></b></p>
+                <p>Day After Tomorrow: <b></b></p>
                 </section>
         </section>
         <div class="company-menu">

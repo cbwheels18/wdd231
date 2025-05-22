@@ -98,6 +98,7 @@ main {
 }
 
 .hero {
+  position: relative;
   width: 100%;
   height: 400px;
   color: white;
@@ -105,11 +106,86 @@ main {
   text-align: center;
   border-radius: 25px;
   margin-bottom: 7rem;
+  overflow: hidden;
 }
 
 .hero img {
   border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
+.hero .cta {
+  position: absolute;
+  bottom: 50px;
+  right: 75px;
+  padding: 1rem 2rem;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .cta:hover {
+  background-color: #57a05b;
+  transform: scale(1.05);
+}
+
+.spotlights {
+  padding: 2rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.spotlight-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.spotlight {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.spotlight a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.gold {
+  color: goldenrod;
+  font-weight: bold;
+  background: black;
+  border-radius: 15px;
+  padding: .5rem;
+}
+
+.silver {
+  color: silver;
+  font-weight: bold;
+  background: black;
+  border-radius: 15px;
+  padding: .5rem;
+}
+
 
 .home {
   grid-template-columns: 1fr;
@@ -149,7 +225,7 @@ main {
   line-height: 1.4;
 }
 
-.weather p {
+.weather p, .weather figure {
   font-size: 1.2rem;
   text-align: center;
 }
