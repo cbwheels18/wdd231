@@ -9,17 +9,26 @@
       content="WDD 231 – Web Frontend Development I - Cody Wheeler - Chamber of Commerce for WDD 231"
     />
     <meta name="author" content="Cody Wheeler" />
-    <meta property="og:title" content="Cody Wheeler Chamber of Commerce">
-    <meta property="og:description" content="My Chamber of Commerce Page for WDD 231">
-    <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
-    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.u1-kK8aG40u_mAFTVw6VVAHaEK%26cb%3Diwc2%26pid%3DApi&f=1&ipt=3c4f5a1973591b276d60b80afe93a51f22f832b28b880fad245c0c1002ca502f&ipo=images" />
+    <meta property="og:title" content="Cody Wheeler Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="My Chamber of Commerce Page for WDD 231"
+    />
+    <meta
+      property="og:url"
+      content="http://127.0.0.1:5500/chamber/directory.html"
+    />
+    <meta
+      property="og:image"
+      content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.u1-kK8aG40u_mAFTVw6VVAHaEK%26cb%3Diwc2%26pid%3DApi&f=1&ipt=3c4f5a1973591b276d60b80afe93a51f22f832b28b880fad245c0c1002ca502f&ipo=images"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/chamber.css" />
     <link rel="stylesheet" href="styles/larger-chamber.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
@@ -46,147 +55,178 @@
       </nav>
     </header>
     <main>
-        <section class="membership-layout">
-  <form class="membership-form" method="get" action="thankyou.html">
-    <h2>Join Now</h2>
+      <section class="membership-layout">
+        <form class="membership-form" method="get" action="thankyou.html">
+          <h2>Join Now</h2>
 
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" name="firstName" title="First Name" required autocomplete="given-name">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            title="First Name"
+            required
+            autocomplete="given-name"
+          />
 
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" name="lastName" title="Last Name" required autocomplete="family-name">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            title="Last Name"
+            required
+            autocomplete="family-name"
+          />
 
-    <label for="orgTitle">Your Title in the Organization</label>
-    <input
-      type="text"
-      id="orgTitle"
-      name="organizationTitle"
-      title="Organization Title"
-      autocomplete="organization-title"
-      placeholder="e.g., Director of Outreach"
-    >
+          <label for="orgTitle">Your Title in the Organization</label>
+          <input
+            type="text"
+            id="orgTitle"
+            name="organizationTitle"
+            title="Organization Title"
+            autocomplete="organization-title"
+            placeholder="e.g., Director of Outreach"
+          />
 
-    <label for="email">Email</label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      title="Email Address"
-      required
-      autocomplete="email"
-      placeholder="you@example.com"
-    >
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            title="Email Address"
+            required
+            autocomplete="email"
+            placeholder="you@example.com"
+          />
 
-    <label for="phone">Mobile Phone</label>
-    <input
-      type="tel"
-      id="phone"
-      name="phone"
-      title="Mobile Phone"
-      required
-      autocomplete="tel"
-    >
+          <label for="phone">Mobile Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            title="Mobile Phone"
+            required
+            autocomplete="tel"
+          />
 
-    <label for="org">Organization Name</label>
-    <input
-      type="text"
-      id="org"
-      name="organization"
-      title="Organization Name"
-      required
-      autocomplete="organization"
-    >
+          <label for="org">Organization Name</label>
+          <input
+            type="text"
+            id="org"
+            name="organization"
+            title="Organization Name"
+            required
+            autocomplete="organization"
+          />
 
-    <label for="level">Membership Level</label>
-    <select id="level" name="membershipLevel" required title="Membership Level">
-      <option value="">Select a level</option>
-      <option value="NP">NP Membership (Non-Profit)</option>
-      <option value="Bronze">Bronze Membership</option>
-      <option value="Silver">Silver Membership</option>
-      <option value="Gold">Gold Membership</option>
-    </select>
+          <label for="level">Membership Level</label>
+          <select
+            id="level"
+            name="membershipLevel"
+            required
+            title="Membership Level"
+          >
+            <option value="">Select a level</option>
+            <option value="NP">NP Membership (Non-Profit)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
 
-    <label for="description">Business Description</label>
-    <textarea
-      id="description"
-      name="description"
-      title="Business Description"
-      rows="4"
-      placeholder="Brief description of your organization"
-    ></textarea>
+          <label for="description">Business Description</label>
+          <textarea
+            id="description"
+            name="description"
+            title="Business Description"
+            rows="4"
+            placeholder="Brief description of your organization"
+          ></textarea>
 
-    
-    <input type="hidden" id="timestamp" name="timestamp">
+          <input type="hidden" id="timestamp" name="timestamp" />
 
-    <input type="submit" value="Join the Chamber">
-  </form>
-  
-  <div class="membership-cards" aria-label="Membership Levels">
-    <h2>Memberships</h2>
-    <div class="membership-card">
-        
-      <h3>Non-Profit</h3>
-      <p>Perfect for non-profit organizations. Free membership.</p>
-      <a href="#" onclick="document.getElementById('modal-np').showModal()">View Benefits</a>
-    </div>
-    <div class="membership-card">
-      <h3>Bronze</h3>
-      <p>Great for startups and individuals.</p>
-      <a href="#" onclick="document.getElementById('modal-bronze').showModal()">View Benefits</a>
-    </div>
-    <div class="membership-card">
-      <h3>Silver</h3>
-      <p>Includes training and discounts.</p>
-      <a href="#" onclick="document.getElementById('modal-silver').showModal()">View Benefits</a>
-    </div>
-    <div class="membership-card">
-      <h3>Gold</h3>
-      <p>Spotlight ads and full promotion features.</p>
-      <a href="#" onclick="document.getElementById('modal-gold').showModal()">View Benefits</a>
-    </div>
-  </div>
-</section>
+          <input type="submit" value="Join the Chamber" />
+        </form>
 
-<!-- Modals -->
-<dialog id="modal-np">
-  <h2>NP Membership</h2>
-  <ul>
-    <li>No fee</li>
-    <li>Newsletter access</li>
-    <li>Community events</li>
-  </ul>
-  <button onclick="this.closest('dialog').close()">Close</button>
-</dialog>
+        <div class="membership-cards" aria-label="Membership Levels">
+          <h2>Memberships</h2>
+          <div class="membership-card">
+            <h3>Non-Profit</h3>
+            <p>Perfect for non-profit organizations. Free membership.</p>
+            <a
+              href="#"
+              onclick="document.getElementById('modal-np').showModal()"
+              >View Benefits</a
+            >
+          </div>
+          <div class="membership-card">
+            <h3>Bronze</h3>
+            <p>Great for startups and individuals.</p>
+            <a
+              href="#"
+              onclick="document.getElementById('modal-bronze').showModal()"
+              >View Benefits</a
+            >
+          </div>
+          <div class="membership-card">
+            <h3>Silver</h3>
+            <p>Includes training and discounts.</p>
+            <a
+              href="#"
+              onclick="document.getElementById('modal-silver').showModal()"
+              >View Benefits</a
+            >
+          </div>
+          <div class="membership-card">
+            <h3>Gold</h3>
+            <p>Spotlight ads and full promotion features.</p>
+            <a
+              href="#"
+              onclick="document.getElementById('modal-gold').showModal()"
+              >View Benefits</a
+            >
+          </div>
+        </div>
+      </section>
 
-<dialog id="modal-bronze">
-  <h2>Bronze Membership</h2>
-  <ul>
-    <li>Newsletter access</li>
-    <li>Startup support</li>
-  </ul>
-  <button onclick="this.closest('dialog').close()">Close</button>
-</dialog>
+      <dialog id="modal-np">
+        <h2>NP Membership</h2>
+        <ul>
+          <li>No fee</li>
+          <li>Newsletter access</li>
+          <li>Community events</li>
+        </ul>
+        <button onclick="this.closest('dialog').close()">Close</button>
+      </dialog>
 
-<dialog id="modal-silver">
-  <h2>Silver Membership</h2>
-  <ul>
-    <li>All Bronze benefits</li>
-    <li>Training programs</li>
-    <li>Event discounts</li>
-  </ul>
-  <button onclick="this.closest('dialog').close()">Close</button>
-</dialog>
+      <dialog id="modal-bronze">
+        <h2>Bronze Membership</h2>
+        <ul>
+          <li>Newsletter access</li>
+          <li>Startup support</li>
+        </ul>
+        <button onclick="this.closest('dialog').close()">Close</button>
+      </dialog>
 
-<dialog id="modal-gold">
-  <h2>Gold Membership</h2>
-  <ul>
-    <li>All Silver benefits</li>
-    <li>Homepage spotlight</li>
-    <li>Premium exposure</li>
-  </ul>
-  <button onclick="this.closest('dialog').close()">Close</button>
-</dialog>
+      <dialog id="modal-silver">
+        <h2>Silver Membership</h2>
+        <ul>
+          <li>All Bronze benefits</li>
+          <li>Training programs</li>
+          <li>Event discounts</li>
+        </ul>
+        <button onclick="this.closest('dialog').close()">Close</button>
+      </dialog>
 
+      <dialog id="modal-gold">
+        <h2>Gold Membership</h2>
+        <ul>
+          <li>All Silver benefits</li>
+          <li>Homepage spotlight</li>
+          <li>Premium exposure</li>
+        </ul>
+        <button onclick="this.closest('dialog').close()">Close</button>
+      </dialog>
     </main>
 
     <footer>
@@ -198,36 +238,25 @@
         <p>(123) 999-9999</p>
       </div>
       <div class="social">
-        
         <a href="https://www.youtube.com" target="_blank" rel="noopener"
-          ><img
-            src="images/youtube.png"
-            alt="Youtube"
-            width="60"
-            height="60"
+          ><img src="images/youtube.png" alt="Youtube" width="60" height="60"
         /></a>
         <a href="https://www.x.com" target="_blank" rel="noopener"
-          ><img
-            src="images/twitter.png"
-            alt="Twitter"
-            width="60"
-            height="60"
+          ><img src="images/twitter.png" alt="Twitter" width="60" height="60"
         /></a>
         <a href="https://www.Linkedin.com" target="_blank" rel="noopener"
-          ><img
-            src="images/linkedin.png"
-            alt="Linkedin"
-            width="60"
-            height="60"
+          ><img src="images/linkedin.png" alt="Linkedin" width="60" height="60"
         /></a>
       </div>
-      
+
       <div class="copywright">
-      <p>WDD 231 Class Project</p>
-      <p>Cody Wheeler</p>
-      <p>
-        &copy; <span id="currentyear"></span> &bull; Nexus Bay Chamber Of Commerce</p>
-      <p id="lastModified"></p>
+        <p>WDD 231 Class Project</p>
+        <p>Cody Wheeler</p>
+        <p>
+          &copy; <span id="currentyear"></span> &bull; Nexus Bay Chamber Of
+          Commerce
+        </p>
+        <p id="lastModified"></p>
       </div>
     </footer>
   </body>
