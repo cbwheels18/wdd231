@@ -14,7 +14,12 @@ header {
   text-align: center;
 }
 
-h1, h2 {
+h1 {
+  font-family: 'Big Shoulders', sans-serif;
+  color: black;
+}
+
+h2 {
   font-family: 'Big Shoulders', sans-serif;
   color: #0077b6;
 }
