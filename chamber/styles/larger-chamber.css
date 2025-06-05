@@ -239,7 +239,6 @@
   justify-content: space-between;
 }
 
-/* Ensure each card respects its area */
 .discover-card:nth-child(1) { grid-area: card1; }
 .discover-card:nth-child(2) { grid-area: card2; }
 .discover-card:nth-child(3) { grid-area: card3; }
