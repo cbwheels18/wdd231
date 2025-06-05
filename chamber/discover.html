@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Nexus Bay</title>
+  <link rel="stylesheet" href="styles/chamber.css" />
+  <link rel="stylesheet" href="styles/larger-chamber.css" />
+  <link rel="stylesheet" href="styles/medium-chamber.css" media="(min-width: 641px)" />
+  <script src="scripts/discover.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="images/nexuslogo.png" alt="Cody" width="200" height="100" />
+      <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html" class="active">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover</h1>
+    <aside class="visit-message" id="visit-message"></aside>
+    <section class="discover-grid" id="discover-cards"></section>
+  </main>
+
+  <footer>
+      <div class="address">
+        <h3><b>Nexus Bay Chamber Of Commerce</b></h3>
+        <p>25 street lane</p>
+        <p>Nexus Bay, Base 123</p>
+        <p>info@nexusbay.org</p>
+        <p>(123) 999-9999</p>
+      </div>
+      <div class="social">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener"
+          ><img src="images/youtube.png" alt="Youtube" width="60" height="60"
+        /></a>
+        <a href="https://www.x.com" target="_blank" rel="noopener"
+          ><img src="images/twitter.png" alt="Twitter" width="60" height="60"
+        /></a>
+        <a href="https://www.Linkedin.com" target="_blank" rel="noopener"
+          ><img src="images/linkedin.png" alt="Linkedin" width="60" height="60"
+        /></a>
+      </div>
+
+      <div class="copywright">
+        <p>WDD 231 Class Project</p>
+        <p>Cody Wheeler</p>
+        <p>
+          &copy; <span id="currentyear"></span> &bull; Nexus Bay Chamber Of
+          Commerce
+        </p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+</body>
+</html>

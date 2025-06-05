@@ -1,0 +1,50 @@
+[
+  {
+    "name": "The Elms | Te Papa Tauranga",
+    "image": "images/theelms.webp",
+    "address": "15 Mission St, Tauranga",
+    "description": "One of New Zealand’s oldest heritage sites, offering a glimpse into the city's colonial history."
+  },
+  {
+    "name": "Bayfair Shopping Centre",
+    "image": "images/bayfairshopping.png",
+    "address": "19 Girven Rd, Mount Maunganui",
+    "description": "A bustling mall with retail stores, dining, and entertainment options."
+  },
+  {
+    "name": "Tauranga Art Gallery",
+    "image": "images/artgallery.webp",
+    "address": "108 Willow St, Tauranga",
+    "description": "Modern art gallery showcasing local and national artists."
+  },
+  {
+    "name": "Mount Hot Pools",
+    "image": "images/hotpools.webp",
+    "address": "9 Adams Ave, Mount Maunganui",
+    "description": "Relax in naturally heated saltwater pools at the base of Mount Maunganui."
+  },
+  {
+    "name": "Mount Maunganui Summit Track",
+    "image": "images/summittrack.webp",
+    "address": "Mount Maunganui, Tauranga",
+    "description": "Popular hiking trail offering sweeping views of the Bay of Plenty."
+  },
+  {
+    "name": "Classic Flyers NZ",
+    "image": "images/classicflyers.webp",
+    "address": "9 Jean Batten Dr, Mount Maunganui",
+    "description": "Aviation museum with vintage aircraft and flight simulators."
+  },
+  {
+    "name": "Tauranga Farmers Market",
+    "image": "images/farmersmarket.webp",
+    "address": "5th Ave, Tauranga Primary School",
+    "description": "Weekly market with fresh produce, artisan foods, and local crafts."
+  },
+  {
+    "name": "Baycourt Community and Arts Centre",
+    "image": "images/baycourt.webp",
+    "address": "38 Durham St, Tauranga",
+    "description": "Venue for live performances, theater, and cultural events."
+  }
+]
