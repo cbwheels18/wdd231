@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utah Lakes</title>
+  <link rel="stylesheet" href="styles/final.css" />
+  <link rel="stylesheet" href="styles/final-larger.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script type="module" src="scripts/main.js" defer></script>
+  <script src="scripts/getdate.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Utah Boating Adventures</h1>
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="lakes.html" class="active">Lakes</a>
+      <a href="amenities.html">Amenities</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Explore Utah's Lakes</h2>
+    <div id="lakes-list" class="lake-grid"></div>
+  </main>
+  <footer>
+      <p>
+        &copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah,
+        USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lake Amenities</title>
+  <link rel="stylesheet" href="styles/final.css" />
+  <script type="module" src="scripts/main.js" defer></script>
+  <link rel="stylesheet" href="styles/final-larger.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="scripts/getdate.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+  <header>
+    <h1>Utah Boating Adventures</h1>
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="lakes.html">Lakes</a>
+      <a href="amenities.html" class="active">Amenities</a>
+    </nav>
+  </header>
+    <main>
+    <h2>Find Lakes by Amenities</h2>
+
+        <div class="filter-container">
+        <button id="filter-toggle">Filter Amenities</button>
+
+        <div id="filter-options" class="checkbox-group hidden">
+            <label><input type="checkbox" value="Boat Ramp" /> Boat Ramp</label>
+            <label><input type="checkbox" value="Campground" /> Campground</label>
+            <label><input type="checkbox" value="Camping" /> Camping</label>
+            <label><input type="checkbox" value="Concessions" /> Concessions</label>
+            <label><input type="checkbox" value="Dock" /> Dock</label>
+            <label><input type="checkbox" value="Fish Cleaning Station" /> Fish Cleaning Station</label>
+            <label><input type="checkbox" value="Fishing" /> Fishing</label>
+            <label><input type="checkbox" value="Fuel" /> Fuel</label>
+            <label><input type="checkbox" value="Gravel Parking" /> Gravel Parking</label>
+            <label><input type="checkbox" value="Grill" /> Grill</label>
+            <label><input type="checkbox" value="Hand‑launch Ramp" /> Hand‑launch Ramp</label>
+            <label><input type="checkbox" value="Marina" /> Marina</label>
+            <label><input type="checkbox" value="Parking" /> Parking</label>
+            <label><input type="checkbox" value="Pavilion" /> Pavilion</label>
+            <label><input type="checkbox" value="Picnic Area" /> Picnic Area</label>
+            <label><input type="checkbox" value="Playground" /> Playground</label>
+            <label><input type="checkbox" value="Rental" /> Rental</label>
+            <label><input type="checkbox" value="Restroom" /> Restroom</label>
+            <label><input type="checkbox" value="Restrooms" /> Restrooms</label>
+            <label><input type="checkbox" value="Sandy Beach" /> Sandy Beach</label>
+            <label><input type="checkbox" value="Shower" /> Shower</label>
+            <label><input type="checkbox" value="Trailhead Access" /> Trailhead Access</label>
+        </div>
+
+        <button id="filter-search">Search</button>
+        </div>
+
+
+    <div id="filtered-results" class="lake-grid"></div>
+    <p id="no-results" class="hidden">No lakes found with the selected amenities.</p>
+    </main>
+    </div>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah,
+        USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

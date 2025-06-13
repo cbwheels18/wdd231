@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utah Boating Adventures - Home</title>
+    <meta name="description" content="Explore Utah's lakes and boating opportunities. Discover featured lakes, amenities, and resources." />
+    <meta name="author" content="Cody Wheeler" />
+    <link rel="stylesheet" href="styles/final.css" />
+    <link rel="stylesheet" href="styles/final-larger.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="scripts/getdate.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Utah Boating Adventures</h1>
+      <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="lakes.html">Lakes</a>
+        <a href="amenities.html">Amenities</a>
+      </nav>
+    </header>
+
+    <main>
+  <section class="hero">
+    <img src="images/lakepowell.jpg" alt="Lake Powell in Utah" />
+    <button class="cta" onclick="window.location.href='lakes.html';">See More Lakes</button>
+  </section>
+
+  <div class="content-grid">
+    <div class="left-column">
+      <section class="intro">
+        <h2>Welcome</h2>
+        <p>Welcome to Utah Boating Adventures. We're excited to share our passion for Utah's stunning lakes and boating experiences. Explore to discover lakes, amenities, and tips for your next water adventure.</p>
+      </section>
+
+      <section class="featured-lake">
+        <h2>Featured Lake</h2>
+        <div class="spotlight-container">
+          
+        </div>
+      </section>
+    </div>
+
+    <div class="right-column">
+      <section class="about">
+        <h2>About</h2>
+        <p>This site was created to help outdoor lovers discover the best lakes for boating in Utah. We offer detailed information about each location, including services, facilities, and seasonal recommendations.</p>
+      </section>
+    </div>
+  </div>
+
+  <section class="contact-section" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact Us</h2>
+    <form action="contact-success.html" method="GET" class="contact-form">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah,
+        USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
