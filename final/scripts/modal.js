@@ -2,11 +2,12 @@ export function createModal() {
   const modal = document.createElement('div');
   modal.setAttribute('role', 'dialog');
   modal.setAttribute('aria-modal', 'true');
-  modal.setAttribute('aria-labelledby', 'modal-title');
+  modal.setAttribute('aria-label', 'Lake details');
   modal.classList.add('modal', 'hidden');
   modal.innerHTML = `
     <div class="modal-content" tabindex="-1">
         <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-title"></h2>
         <div id="modal-body"></div>
     </div>
     `;
@@ -26,14 +27,10 @@ export function createModal() {
   }
 
     function openModal(title, content) {
-    const modalBody = modal.querySelector('#modal-body');
-    modalBody.innerHTML = `
-        <h2 id="modal-title">${title}</h2>
-        ${content}
-    `;
+    modal.querySelector('#modal-title').textContent = title;
+    modal.querySelector('#modal-body').innerHTML = content;
     modal.classList.remove('hidden');
     modal.querySelector('.modal-content').focus();
     }
-
   return { openModal, closeModal };
 }
