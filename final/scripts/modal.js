@@ -6,11 +6,10 @@ export function createModal() {
   modal.classList.add('modal', 'hidden');
   modal.innerHTML = `
     <div class="modal-content" tabindex="-1">
-      <button class="modal-close" aria-label="Close modal">&times;</button>
-      <h2 id="modal-title"></h2>
-      <div id="modal-body"></div>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div id="modal-body"></div>
     </div>
-  `;
+    `;
   document.body.appendChild(modal);
 
   const closeBtn = modal.querySelector('.modal-close');
@@ -26,12 +25,15 @@ export function createModal() {
     modalContent.blur();
   }
 
-  function openModal(title, content) {
-    modal.querySelector('#modal-title').textContent = title;
-    modal.querySelector('#modal-body').innerHTML = content;
+    function openModal(title, content) {
+    const modalBody = modal.querySelector('#modal-body');
+    modalBody.innerHTML = `
+        <h2 id="modal-title">${title}</h2>
+        ${content}
+    `;
     modal.classList.remove('hidden');
-    modalContent.focus();
-  }
+    modal.querySelector('.modal-content').focus();
+    }
 
   return { openModal, closeModal };
 }
