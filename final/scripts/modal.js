@@ -23,7 +23,7 @@ export function createModal() {
   function closeModal() {
     modal.classList.add('hidden');
     modalContent.blur();
-    // Clean up old heading if it exists
+    
     const oldHeading = modalBody.querySelector('#modal-title');
     if (oldHeading) oldHeading.remove();
   }
