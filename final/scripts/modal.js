@@ -2,19 +2,18 @@ export function createModal() {
   const modal = document.createElement('div');
   modal.setAttribute('role', 'dialog');
   modal.setAttribute('aria-modal', 'true');
-  modal.setAttribute('aria-label', 'Lake details');
   modal.classList.add('modal', 'hidden');
   modal.innerHTML = `
     <div class="modal-content" tabindex="-1">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h2 id="modal-title"></h2>
-        <div id="modal-body"></div>
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modal-body"></div>
     </div>
-    `;
+  `;
   document.body.appendChild(modal);
 
   const closeBtn = modal.querySelector('.modal-close');
   const modalContent = modal.querySelector('.modal-content');
+  const modalBody = modal.querySelector('#modal-body');
 
   closeBtn.addEventListener('click', () => closeModal());
   modal.addEventListener('click', (e) => {
@@ -24,13 +23,27 @@ export function createModal() {
   function closeModal() {
     modal.classList.add('hidden');
     modalContent.blur();
+    // Clean up old heading if it exists
+    const oldHeading = modalBody.querySelector('#modal-title');
+    if (oldHeading) oldHeading.remove();
   }
 
-    function openModal(title, content) {
-    modal.querySelector('#modal-title').textContent = title;
-    modal.querySelector('#modal-body').innerHTML = content;
+  function openModal(title, content) {
+    modalBody.innerHTML = '';
+
+    const heading = document.createElement('h2');
+    heading.id = 'modal-title';
+    heading.textContent = title;
+    modalBody.appendChild(heading);
+
+    const contentDiv = document.createElement('div');
+    contentDiv.innerHTML = content;
+    modalBody.appendChild(contentDiv);
+
+    modal.setAttribute('aria-labelledby', 'modal-title');
     modal.classList.remove('hidden');
-    modal.querySelector('.modal-content').focus();
-    }
+    modalContent.focus();
+  }
+
   return { openModal, closeModal };
 }
